@@ -1,0 +1,1 @@
+Med Care Health Group clean blue website. Arabic default, English switch button. Delta Lab fixed.
