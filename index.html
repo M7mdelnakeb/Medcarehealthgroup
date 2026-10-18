@@ -1,198 +1,437 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-title-en="Med Care Health Group | Healthcare Management &amp; Medical Solutions">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Med Care Health Group</title>
-  <meta name="description" content="Med Care Health Group - إدارة وتشغيل وتجهيز المختبرات والمنشآت الطبية والشراكات الطبية الدولية." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Med Care Health Group | إدارة وتشغيل وتجهيز المنشآت الطبية</title>
+  <meta name="description" content="Med Care Health Group: تجهيز المختبرات والمنشآت الطبية وإدارتها وتشغيلها، ونظام Pure Health Care لإدارة المنشآت الطبية. مصر والكويت والأردن.">
+  <meta name="theme-color" content="#0B3C5D">
+  <link rel="canonical" href="https://www.medcarehealthgroup.com/">
+  <link rel="icon" type="image/png" href="img/mch-mark.png">
+  <link rel="apple-touch-icon" href="img/mch-mark.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Med Care Health Group">
+  <meta property="og:title" content="Med Care Health Group">
+  <meta property="og:description" content="نبني المختبرات والمنشآت الطبية، وندير تشغيلها، ونمنحها نظامًا رقميًا متكاملًا.">
+  <meta property="og:image" content="https://www.medcarehealthgroup.com/img/mch-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Med Care Health Group","url":"https://www.medcarehealthgroup.com","logo":"https://www.medcarehealthgroup.com/img/mch-logo.png","email":"info@medcarehealthgroup.com","address":{"@type":"PostalAddress","streetAddress":"Cairo-Alexandria Agricultural Road, KM 43","addressCountry":"EG"},"areaServed":["EG","KW","JO"]}
+  </script>
 </head>
 <body>
-<header class="topbar">
-  <div class="container nav">
-    <a href="#home" class="brand">
-      <span class="logo-wrap"><img src="logo-transparent.png" alt="Med Care Health Group"></span>
-      <span class="brand-text">
-        <b>Med Care</b>
-        <small>Health Group</small>
-      </span>
-    </a>
 
-    <nav class="menu">
+<header class="topbar" id="top">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="Med Care Health Group">
+      <img src="img/mch-mark.png" alt="" width="34" height="44">
+      <span class="brand-text"><b>Med Care</b><small>Health Group</small></span>
+    </a>
+    <nav class="menu" id="menu">
       <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
       <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
-      <a href="#projects" data-ar="الخبرات" data-en="Experience">الخبرات</a>
-      <a href="#partners" data-ar="الشراكات" data-en="Partners">الشراكات</a>
+      <a href="#system" data-ar="Pure Health Care" data-en="Pure Health Care">Pure Health Care</a>
+      <a href="#recruitment" data-ar="التوظيف" data-en="Recruitment">التوظيف</a>
+      <a href="#experience" data-ar="خبراتنا" data-en="Experience">خبراتنا</a>
       <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
     </nav>
-
-    <button id="langBtn" class="lang">English</button>
+    <div class="nav-actions">
+      <button type="button" id="langBtn" class="lang" lang="en">English</button>
+      <a href="#contact" class="btn primary small hide-sm" data-ar="اطلب عرضًا توضيحيًا" data-en="Request a demo">اطلب عرضًا توضيحيًا</a>
+      <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
-<main id="home">
+<main>
+  <!-- الواجهة -->
   <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <div class="hero-content">
-        <p class="kicker" data-ar="حلول صحية متكاملة" data-en="Integrated Healthcare Solutions">حلول صحية متكاملة</p>
-        <h1 data-ar="إدارة وتشغيل وتجهيز المختبرات والمنشآت الطبية باحترافية"
-            data-en="Professional management, operation, and setup for laboratories and healthcare facilities">
-          إدارة وتشغيل وتجهيز المختبرات والمنشآت الطبية باحترافية
-        </h1>
-        <p class="lead"
-           data-ar="نساعد المستثمرين وملاك المنشآت الطبية على بناء وتشغيل وتطوير المختبرات والخدمات الصحية من خلال حلول إدارية وتشغيلية وتقنية متكاملة."
-           data-en="We support healthcare investors and facility owners in building, operating, and developing laboratories and healthcare services through integrated management, operational, and digital solutions.">
-          نساعد المستثمرين وملاك المنشآت الطبية على بناء وتشغيل وتطوير المختبرات والخدمات الصحية من خلال حلول إدارية وتشغيلية وتقنية متكاملة.
-        </p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-ar="إدارة وتشغيل وتجهيز المنشآت الطبية" data-en="Healthcare management & medical solutions">إدارة وتشغيل وتجهيز المنشآت الطبية</p>
+        <h1 data-ar="نبني المختبرات والمنشآت الطبية، وندير تشغيلها، ونمنحها نظامًا رقميًا متكاملًا"
+            data-en="We build, run and digitize medical laboratories and healthcare facilities">نبني المختبرات والمنشآت الطبية، وندير تشغيلها، ونمنحها نظامًا رقميًا متكاملًا</h1>
+        <p class="lead" data-ar="شريك واحد من الفكرة حتى التشغيل: تجهيز المختبر واختيار أجهزته، وإدارة العمل اليومي والجودة، ونظام Pure Health Care الذي يدير المنشأة كلها، والكوادر الطبية المؤهلة."
+           data-en="One partner from idea to operation: laboratory setup and equipment, day-to-day management and quality, Pure Health Care to run the whole facility, and qualified medical staff.">شريك واحد من الفكرة حتى التشغيل: تجهيز المختبر واختيار أجهزته، وإدارة العمل اليومي والجودة، ونظام Pure Health Care الذي يدير المنشأة كلها، والكوادر الطبية المؤهلة.</p>
         <div class="actions">
-          <a href="#contact" class="btn primary" data-ar="ابدأ التواصل" data-en="Contact Us">ابدأ التواصل</a>
-          <a href="#services" class="btn ghost" data-ar="اعرف خدماتنا" data-en="View Services">اعرف خدماتنا</a>
+          <a href="#contact" class="btn primary" data-ar="اطلب عرضًا توضيحيًا" data-en="Request a demo">اطلب عرضًا توضيحيًا</a>
+          <a href="#system" class="btn ghost" data-ar="تعرّف على Pure Health Care" data-en="Discover Pure Health Care">تعرّف على Pure Health Care</a>
+        </div>
+        <ul class="hero-points">
+          <li data-ar="خبرة تشغيلية فعلية في المختبرات" data-en="Hands-on laboratory operations experience">خبرة تشغيلية فعلية في المختبرات</li>
+          <li data-ar="نظام عربي وإنجليزي لعدة فروع" data-en="Arabic & English, multi-branch system">نظام عربي وإنجليزي لعدة فروع</li>
+          <li data-ar="توظيف طبي إلى الكويت" data-en="Medical recruitment to Kuwait">توظيف طبي إلى الكويت</li>
+        </ul>
+      </div>
+
+      <!-- شكل توضيحي للنظام -->
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="mock">
+          <div class="mock-bar"><i></i><i></i><i></i><span>Pure Health Care</span></div>
+          <div class="mock-body">
+            <aside class="mock-side">
+              <img src="img/phc-icon.png" alt="" width="34" height="34">
+              <b class="on" data-ar="المختبر" data-en="Laboratory">المختبر</b>
+              <b data-ar="الاستقبال" data-en="Reception">الاستقبال</b>
+              <b data-ar="المالية" data-en="Finance">المالية</b>
+              <b data-ar="الموارد البشرية" data-en="HR">الموارد البشرية</b>
+              <b data-ar="الطلبات" data-en="Requests">الطلبات</b>
+            </aside>
+            <div class="mock-main">
+              <p class="mock-title" data-ar="مراحل الزيارة" data-en="Visit stages">مراحل الزيارة</p>
+              <ol class="stages">
+                <li class="done" data-ar="التسجيل" data-en="Registration">التسجيل</li>
+                <li class="done" data-ar="الدفع" data-en="Payment">الدفع</li>
+                <li class="done" data-ar="سحب العينة" data-en="Collection">سحب العينة</li>
+                <li class="done" data-ar="الاستلام" data-en="Receiving">الاستلام</li>
+                <li class="now" data-ar="النتائج" data-en="Results">النتائج</li>
+                <li data-ar="الاعتماد" data-en="Approval">الاعتماد</li>
+                <li data-ar="التقرير" data-en="Report">التقرير</li>
+              </ol>
+              <div class="mock-rows">
+                <div><span>CBC</span><em class="ok" data-ar="معتمد" data-en="Approved">معتمد</em></div>
+                <div><span>HbA1c</span><em class="warn" data-ar="بانتظار الاعتماد" data-en="Awaiting approval">بانتظار الاعتماد</em></div>
+                <div><span>Lipid Profile</span><em class="run" data-ar="على الجهاز" data-en="On analyzer">على الجهاز</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-card qr-card">
+          <svg viewBox="0 0 21 21" width="54" height="54"><path fill="currentColor" d="M0 0h7v7H0zM1 1v5h5V1zM2 2h3v3H2zM14 0h7v7h-7zm1 1v5h5V1zm1 1h3v3h-3zM0 14h7v7H0zm1 1v5h5v-5zm1 1h3v3H2zM8 0h1v2H8zm2 1h2v1h-2zm-2 3h2v2H8zm3 0h1v3h-1zM8 8h2v1H8zm3 0h3v1h-3zm4 0h2v2h-2zm3 0h3v1h-3zM0 8h2v2H0zm3 1h3v1H3zm5 2h1v3H8zm2-1h2v2h-2zm3 1h2v1h-2zm3 1h3v2h-3zM9 15h3v1H9zm4-1h1v3h-1zm2 1h2v2h-2zm3 2h2v1h-2zM8 18h2v3H8zm3 0h2v1h-2zm3 1h3v2h-3zm5 0h2v2h-2z"/></svg>
+          <div><b data-ar="تقرير معتمد" data-en="Verified report">تقرير معتمد</b><small data-ar="يُتحقَّق منه برمز QR" data-en="Verifiable by QR code">يُتحقَّق منه برمز QR</small></div>
+        </div>
+        <div class="float-card alert-card">
+          <span class="dot"></span>
+          <div><b data-ar="قيمة حرجة" data-en="Critical value">قيمة حرجة</b><small data-ar="تم إبلاغ الطبيب وتسجيل الإجراء" data-en="Doctor notified, action logged">تم إبلاغ الطبيب وتسجيل الإجراء</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الدول -->
+  <section class="strip">
+    <div class="container strip-grid">
+      <div class="reveal"><strong data-ar="مصر" data-en="Egypt">مصر</strong><span data-ar="إدارة المختبرات وتشغيلها" data-en="Laboratory management & operations">إدارة المختبرات وتشغيلها</span></div>
+      <div class="reveal"><strong data-ar="الكويت" data-en="Kuwait">الكويت</strong><span data-ar="تجهيز المختبرات وتشغيلها" data-en="Laboratory setup & operations">تجهيز المختبرات وتشغيلها</span></div>
+      <div class="reveal"><strong data-ar="الأردن" data-en="Jordan">الأردن</strong><span data-ar="مختبرات مرجعية متخصصة" data-en="Specialized reference laboratories">مختبرات مرجعية متخصصة</span></div>
+      <div class="reveal"><strong data-ar="التوظيف الطبي" data-en="Recruitment">التوظيف الطبي</strong><span data-ar="من الكويت ومن مصر إلى الكويت" data-en="Kuwait and Egypt to Kuwait">من الكويت ومن مصر إلى الكويت</span></div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div class="reveal">
+        <p class="eyebrow" data-ar="من نحن" data-en="Who we are">من نحن</p>
+        <h2 data-ar="خبرة من داخل المختبر، لا من خلف المكاتب" data-en="Experience from inside the lab, not behind a desk">خبرة من داخل المختبر، لا من خلف المكاتب</h2>
+        <p data-ar="Med Care Health Group شركة متخصصة في حلول القطاع الطبي، وفي مقدمتها المختبرات: من التخطيط والتجهيز، إلى التشغيل والإدارة والجودة، وصولًا إلى التحول الرقمي الكامل."
+           data-en="Med Care Health Group specializes in healthcare solutions, laboratories first: from planning and setup to operation, management and quality, all the way to full digital transformation.">Med Care Health Group شركة متخصصة في حلول القطاع الطبي، وفي مقدمتها المختبرات: من التخطيط والتجهيز، إلى التشغيل والإدارة والجودة، وصولًا إلى التحول الرقمي الكامل.</p>
+        <p data-ar="نعمل مع المستثمرين وملّاك المنشآت الطبية على بناء نموذج تشغيلي قوي يرفع جودة الخدمة، ويقلّل الهدر، ويمهّد للتوسع في أسواق المنطقة."
+           data-en="We work with investors and facility owners to build a strong operating model that raises service quality, reduces waste and prepares for expansion across the region.">نعمل مع المستثمرين وملّاك المنشآت الطبية على بناء نموذج تشغيلي قوي يرفع جودة الخدمة، ويقلّل الهدر، ويمهّد للتوسع في أسواق المنطقة.</p>
+      </div>
+      <div class="values">
+        <div class="value reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7.5 14h9"/></svg></span>
+          <div><h3 data-ar="خبرة تشغيلية" data-en="Operational expertise">خبرة تشغيلية</h3><p data-ar="أدرنا مختبرات فعلية وجهّزناها، ونعرف تفاصيل العمل اليومي." data-en="We have run and set up real laboratories and know the daily details.">أدرنا مختبرات فعلية وجهّزناها، ونعرف تفاصيل العمل اليومي.</p></div>
+        </div>
+        <div class="value reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+          <div><h3 data-ar="الجودة والامتثال" data-en="Quality & compliance">الجودة والامتثال</h3><p data-ar="سياسات وإجراءات واضحة، وتوثيق كامل، والتزام باشتراطات كل دولة." data-en="Clear policies and procedures, full documentation and local regulatory compliance.">سياسات وإجراءات واضحة، وتوثيق كامل، والتزام باشتراطات كل دولة.</p></div>
+        </div>
+        <div class="value reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span>
+          <div><h3 data-ar="نظام من صنعنا" data-en="Our own system">نظام من صنعنا</h3><p data-ar="طوّرنا Pure Health Care من واقع التشغيل، فيتطور مع احتياج كل منشأة." data-en="We built Pure Health Care from real operations, so it evolves with each facility's needs.">طوّرنا Pure Health Care من واقع التشغيل، فيتطور مع احتياج كل منشأة.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الخدمات -->
+  <section id="services" class="section tint">
+    <div class="container">
+      <div class="head reveal">
+        <p class="eyebrow" data-ar="خدماتنا" data-en="Our services">خدماتنا</p>
+        <h2 data-ar="خدمات مترابطة تغطي دورة المشروع الطبي كاملة" data-en="Connected services covering the full healthcare project cycle">خدمات مترابطة تغطي دورة المشروع الطبي كاملة</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7.5 14h9"/></svg></span>
+          <h3 data-ar="إدارة المختبرات وتشغيلها" data-en="Laboratory management & operations">إدارة المختبرات وتشغيلها</h3>
+          <p data-ar="إدارة التشغيل اليومي، وتنظيم سير العمل، وإعداد السياسات والإجراءات، ومتابعة الجودة، وتدريب الفرق، ورفع الكفاءة التشغيلية." data-en="Daily operations, workflow design, SOPs, quality follow-up, team training and operational efficiency.">إدارة التشغيل اليومي، وتنظيم سير العمل، وإعداد السياسات والإجراءات، ومتابعة الجودة، وتدريب الفرق، ورفع الكفاءة التشغيلية.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-5h4v5M10 11h4M12 9v4"/></svg></span>
+          <h3 data-ar="تجهيز المنشآت والمختبرات" data-en="Facility & laboratory setup">تجهيز المنشآت والمختبرات</h3>
+          <p data-ar="تخطيط المساحات، واختيار الأجهزة، وتجهيز البنية التحتية، والتنسيق مع الموردين، وتسليم المشروع جاهزًا للتشغيل." data-en="Space planning, equipment selection, infrastructure, supplier coordination and a ready-to-operate handover.">تخطيط المساحات، واختيار الأجهزة، وتجهيز البنية التحتية، والتنسيق مع الموردين، وتسليم المشروع جاهزًا للتشغيل.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 5-6"/></svg></span>
+          <h3 data-ar="الاستشارات الإدارية والتشغيلية" data-en="Management & operational consulting">الاستشارات الإدارية والتشغيلية</h3>
+          <p data-ar="دراسات الجدوى، وتقييم الأداء، وإعادة الهيكلة، وخطط التوسع، وإدارة المخاطر، وتطوير نماذج العمل." data-en="Feasibility studies, performance reviews, restructuring, expansion plans, risk management and operating models.">دراسات الجدوى، وتقييم الأداء، وإعادة الهيكلة، وخطط التوسع، وإدارة المخاطر، وتطوير نماذج العمل.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span>
+          <h3 data-ar="الشراكات الطبية الدولية" data-en="International medical partnerships">الشراكات الطبية الدولية</h3>
+          <p data-ar="بناء قنوات تعاون مع مختبرات وشركات طبية خارجية، وإدارة الوكالات والخدمات المرجعية والفحوصات المتخصصة." data-en="Collaboration with external laboratories and medical companies, agencies, reference services and specialized tests.">بناء قنوات تعاون مع مختبرات وشركات طبية خارجية، وإدارة الوكالات والخدمات المرجعية والفحوصات المتخصصة.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M8 3v7l-3 8a2 2 0 0 0 2 3h4M8 3h4M16 13v8M12 17h8"/></svg></span>
+          <h3 data-ar="إدارة العينات المرجعية" data-en="Reference sample management">إدارة العينات المرجعية</h3>
+          <p data-ar="تنسيق إرسال العينات ومتابعة نتائجها، والتواصل مع المختبرات الخارجية، ودعم الفحوصات المتقدمة كفحوص الحمض النووي والفحوص الجينية." data-en="Sample referral and result follow-up, liaison with external labs, and support for advanced DNA and genetic testing.">تنسيق إرسال العينات ومتابعة نتائجها، والتواصل مع المختبرات الخارجية، ودعم الفحوصات المتقدمة كفحوص الحمض النووي والفحوص الجينية.</p>
+        </article>
+        <article class="card reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span>
+          <h3 data-ar="الأنظمة والتحول الرقمي" data-en="Systems & digital transformation">الأنظمة والتحول الرقمي</h3>
+          <p data-ar="تطبيق نظام Pure Health Care، وربط أجهزة التحاليل، والتقارير الرقمية، وأتمتة الإجراءات، وتدريب الفريق على العمل به." data-en="Pure Health Care rollout, analyzer integration, digital reports, process automation and staff training.">تطبيق نظام Pure Health Care، وربط أجهزة التحاليل، والتقارير الرقمية، وأتمتة الإجراءات، وتدريب الفريق على العمل به.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- النظام -->
+  <section id="system" class="section dark">
+    <div class="container">
+      <div class="system-head reveal">
+        <img src="img/phc-icon.png" alt="Pure Health Care" width="72" height="72" class="phc-icon">
+        <div>
+          <p class="eyebrow light" data-ar="نظامنا" data-en="Our system">نظامنا</p>
+          <h2>Pure Health Care</h2>
+          <p class="sub" data-ar="نظام متكامل لإدارة المنشآت الطبية، طوّرناه من واقع تشغيل المختبرات. موديولات تُفعَّل حسب احتياج كل منشأة، ويعمل لعدة فروع، بالعربية والإنجليزية."
+             data-en="An integrated healthcare management system built from real laboratory operations. Modules are enabled per facility, it runs across branches, in Arabic and English.">نظام متكامل لإدارة المنشآت الطبية، طوّرناه من واقع تشغيل المختبرات. موديولات تُفعَّل حسب احتياج كل منشأة، ويعمل لعدة فروع، بالعربية والإنجليزية.</p>
         </div>
       </div>
 
-      <aside class="hero-panel">
-        <div class="logo-hero"><img src="logo-transparent.png" alt="Med Care Health Group"></div>
-        <h2 data-ar="Med Care Health Group" data-en="Med Care Health Group">Med Care Health Group</h2>
-        <p data-ar="خبرة تشغيلية وشراكات إقليمية في مصر والكويت والأردن."
-           data-en="Operational experience and regional partnerships across Egypt, Kuwait, and Jordan.">
-          خبرة تشغيلية وشراكات إقليمية في مصر والكويت والأردن.
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="quick">
-    <div class="container quick-grid">
-      <div><strong data-ar="مصر" data-en="Egypt">مصر</strong><span data-ar="إدارة معمل الدلتا" data-en="Delta Lab Management">إدارة معمل الدلتا</span></div>
-      <div><strong data-ar="الكويت" data-en="Kuwait">الكويت</strong><span data-ar="تشغيل وتجهيز مختبرات" data-en="Laboratory setup & operations">تشغيل وتجهيز مختبرات</span></div>
-      <div><strong data-ar="الأردن" data-en="Jordan">الأردن</strong><span data-ar="مختبرات مرجعية خارجية" data-en="External reference laboratories">مختبرات مرجعية خارجية</span></div>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container two">
-      <div class="section-head">
-        <p class="kicker" data-ar="من نحن" data-en="Who We Are">من نحن</p>
-        <h2 data-ar="شركة متخصصة في حلول المختبرات والإدارة الصحية"
-            data-en="A specialized company in laboratory and healthcare management solutions">
-          شركة متخصصة في حلول المختبرات والإدارة الصحية
-        </h2>
+      <div class="modules">
+        <article class="module reveal">
+          <h3 data-ar="المختبر" data-en="Laboratory (LIS)">المختبر</h3>
+          <ul>
+            <li data-ar="دورة العينة كاملة بالباركود والملصقات" data-en="Full sample cycle with barcodes and labels">دورة العينة كاملة بالباركود والملصقات</li>
+            <li data-ar="النتائج والمعادلات والقيم المرجعية والحرجة" data-en="Results, formulas, reference and critical values">النتائج والمعادلات والقيم المرجعية والحرجة</li>
+            <li data-ar="اعتماد على مرحلتين وتقرير برمز QR" data-en="Two-step approval and QR-verified reports">اعتماد على مرحلتين وتقرير برمز QR</li>
+            <li data-ar="ربط أجهزة التحاليل (ASTM / HL7)" data-en="Analyzer integration (ASTM / HL7)">ربط أجهزة التحاليل (ASTM / HL7)</li>
+          </ul>
+        </article>
+        <article class="module reveal">
+          <h3 data-ar="الاستقبال والزيارات" data-en="Reception & visits">الاستقبال والزيارات</h3>
+          <ul>
+            <li data-ar="تسجيل المرضى ومنع تكرار الملفات" data-en="Patient registration with duplicate prevention">تسجيل المرضى ومنع تكرار الملفات</li>
+            <li data-ar="الحجوزات والسحب المنزلي" data-en="Bookings and home collection">الحجوزات والسحب المنزلي</li>
+            <li data-ar="التسجيل الجماعي للشركات" data-en="Bulk registration for companies">التسجيل الجماعي للشركات</li>
+            <li data-ar="قراءة البطاقات بالماسح الضوئي" data-en="ID and insurance card scanning">قراءة البطاقات بالماسح الضوئي</li>
+          </ul>
+        </article>
+        <article class="module reveal">
+          <h3 data-ar="الفوترة والتأمين والتعاقدات" data-en="Billing, insurance & contracts">الفوترة والتأمين والتعاقدات</h3>
+          <ul>
+            <li data-ar="النقدي والتأمين والجهات المتعاقدة" data-en="Cash, insurance and contracted payers">النقدي والتأمين والجهات المتعاقدة</li>
+            <li data-ar="قوائم أسعار متعددة العملات" data-en="Multi-currency price lists">قوائم أسعار متعددة العملات</li>
+            <li data-ar="حدود الموافقة والائتمان لكل جهة" data-en="Approval and credit limits per payer">حدود الموافقة والائتمان لكل جهة</li>
+            <li data-ar="عمولات الجهات المحيلة" data-en="Referrer commissions">عمولات الجهات المحيلة</li>
+          </ul>
+        </article>
+        <article class="module reveal">
+          <h3 data-ar="المالية والخزينة" data-en="Finance & treasury">المالية والخزينة</h3>
+          <ul>
+            <li data-ar="الخزائن والورديات والجرد" data-en="Cash boxes, shifts and cash counts">الخزائن والورديات والجرد</li>
+            <li data-ar="المصروفات والتحويلات" data-en="Expenses and transfers">المصروفات والتحويلات</li>
+            <li data-ar="مطالبات الجهات وسداداتها" data-en="Payer claims and settlements">مطالبات الجهات وسداداتها</li>
+            <li data-ar="تقارير يومية وشهرية" data-en="Daily and monthly reports">تقارير يومية وشهرية</li>
+          </ul>
+        </article>
+        <article class="module reveal">
+          <h3 data-ar="الموارد البشرية" data-en="Human resources">الموارد البشرية</h3>
+          <ul>
+            <li data-ar="ملف الموظف والعقود والتوظيف" data-en="Employee files, contracts and recruitment">ملف الموظف والعقود والتوظيف</li>
+            <li data-ar="الرواتب والإجازات ونهاية الخدمة" data-en="Payroll, leave and end of service">الرواتب والإجازات ونهاية الخدمة</li>
+            <li data-ar="الحضور بأجهزة البصمة والموقع" data-en="Attendance by biometric devices and location">الحضور بأجهزة البصمة والموقع</li>
+            <li data-ar="وفق قانون العمل في دولة المنشأة" data-en="Aligned with the local labor law">وفق قانون العمل في دولة المنشأة</li>
+          </ul>
+        </article>
+        <article class="module reveal">
+          <h3 data-ar="الطلبات والموافقات" data-en="Requests & approvals">الطلبات والموافقات</h3>
+          <ul>
+            <li data-ar="مسارات اعتماد إلكترونية لكل طلب" data-en="Electronic approval workflows">مسارات اعتماد إلكترونية لكل طلب</li>
+            <li data-ar="التفويض والتصعيد التلقائي" data-en="Delegation and automatic escalation">التفويض والتصعيد التلقائي</li>
+            <li data-ar="مستندات معتمدة برمز QR" data-en="QR-verified official documents">مستندات معتمدة برمز QR</li>
+            <li data-ar="بوابة للموظفين على الهاتف" data-en="Mobile employee portal">بوابة للموظفين على الهاتف</li>
+          </ul>
+        </article>
       </div>
-      <div class="copy-card">
-        <p data-ar="تعمل Med Care Health Group على تقديم حلول عملية للقطاع الطبي، خصوصاً المختبرات، بداية من التخطيط والتجهيز وحتى التشغيل والإدارة والجودة والتحول الرقمي."
-           data-en="Med Care Health Group delivers practical solutions for the healthcare sector, especially laboratories, from planning and setup to operation, management, quality, and digital transformation.">
-          تعمل Med Care Health Group على تقديم حلول عملية للقطاع الطبي، خصوصاً المختبرات، بداية من التخطيط والتجهيز وحتى التشغيل والإدارة والجودة والتحول الرقمي.
-        </p>
-        <p data-ar="هدفنا هو بناء نموذج تشغيلي قوي يساعد المنشآت الطبية على تحسين الأداء، تقليل الهدر، رفع جودة الخدمة، والتوسع داخل الأسواق الإقليمية."
-           data-en="Our goal is to build a strong operating model that helps healthcare facilities improve performance, reduce waste, enhance service quality, and expand across regional markets.">
-          هدفنا هو بناء نموذج تشغيلي قوي يساعد المنشآت الطبية على تحسين الأداء، تقليل الهدر، رفع جودة الخدمة، والتوسع داخل الأسواق الإقليمية.
-        </p>
+
+      <div class="features reveal">
+        <div><b data-ar="عدة فروع" data-en="Multi-branch">عدة فروع</b><span data-ar="ومراكز معالجة بين الفروع" data-en="with inter-branch processing">ومراكز معالجة بين الفروع</span></div>
+        <div><b data-ar="سجل عمليات محمي" data-en="Protected audit log">سجل عمليات محمي</b><span data-ar="كل إجراء وكل اطلاع مسجّل" data-en="every action and access recorded">كل إجراء وكل اطلاع مسجّل</span></div>
+        <div><b data-ar="صلاحيات دقيقة" data-en="Fine-grained permissions">صلاحيات دقيقة</b><span data-ar="وأدوار جاهزة لكل قسم" data-en="with ready roles per department">وأدوار جاهزة لكل قسم</span></div>
+        <div><b data-ar="عربي وإنجليزي" data-en="Arabic & English">عربي وإنجليزي</b><span data-ar="ويدعم دول المنطقة" data-en="ready for regional countries">ويدعم دول المنطقة</span></div>
+      </div>
+
+      <div class="soon reveal">
+        <span data-ar="قريبًا:" data-en="Coming soon:">قريبًا:</span>
+        <em data-ar="الأشعة" data-en="Radiology">الأشعة</em>
+        <em data-ar="العيادات" data-en="Clinics">العيادات</em>
+        <em data-ar="الصيدلية" data-en="Pharmacy">الصيدلية</em>
+        <em data-ar="المخزون والمشتريات" data-en="Inventory & purchasing">المخزون والمشتريات</em>
+        <em data-ar="الحسابات العامة" data-en="General accounting">الحسابات العامة</em>
+      </div>
+
+      <div class="other-product reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-3 4-6 6.5-6 10a6 6 0 0 0 12 0c0-3.5-3-6-6-10z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg></span>
+        <div>
+          <p class="eyebrow light" data-ar="من برامجنا أيضًا" data-en="Also from us">من برامجنا أيضًا</p>
+          <h3 data-ar="برنامج الحساسية" data-en="Allergy Program">برنامج الحساسية</h3>
+          <p data-ar="برنامج متخصص لإدارة فحوصات الحساسية ونتائجها وتقاريرها." data-en="A dedicated program for managing allergy tests, results and reports.">برنامج متخصص لإدارة فحوصات الحساسية ونتائجها وتقاريرها.</p>
+        </div>
+      </div>
+
+      <div class="center reveal">
+        <a href="#contact" class="btn primary" data-ar="اطلب عرضًا توضيحيًا للنظام" data-en="Request a system demo">اطلب عرضًا توضيحيًا للنظام</a>
       </div>
     </div>
   </section>
 
-  <section id="services" class="section pale">
+  <!-- التوظيف -->
+  <section id="recruitment" class="section">
     <div class="container">
-      <div class="title">
-        <p class="kicker" data-ar="خدماتنا" data-en="Our Services">خدماتنا</p>
-        <h2 data-ar="خدمات واضحة ومترابطة تخدم دورة المشروع الطبي بالكامل"
-            data-en="Clear connected services covering the full healthcare project cycle">
-          خدمات واضحة ومترابطة تخدم دورة المشروع الطبي بالكامل
-        </h2>
+      <div class="head reveal">
+        <p class="eyebrow" data-ar="التوظيف الطبي" data-en="Medical recruitment">التوظيف الطبي</p>
+        <h2 data-ar="الكفاءة المناسبة للمنشأة المناسبة" data-en="The right talent for the right facility">الكفاءة المناسبة للمنشأة المناسبة</h2>
+        <p class="head-sub" data-ar="نوفّر للمنشآت الطبية في الكويت كوادر مؤهلة، من داخل الكويت ومن مصر، ونرافق المرشح من المقابلة حتى مباشرة العمل." data-en="We provide Kuwaiti healthcare facilities with qualified staff, from within Kuwait and from Egypt, and support candidates from interview to day one.">نوفّر للمنشآت الطبية في الكويت كوادر مؤهلة، من داخل الكويت ومن مصر، ونرافق المرشح من المقابلة حتى مباشرة العمل.</p>
       </div>
-
-      <div class="service-grid">
-        <article><b>01</b><h3 data-ar="إدارة وتشغيل المختبرات" data-en="Laboratory Management & Operations">إدارة وتشغيل المختبرات</h3><p data-ar="إدارة التشغيل اليومي، تنظيم سير العمل، تطوير السياسات والإجراءات، متابعة الجودة، تدريب الفرق، وتحسين الكفاءة التشغيلية." data-en="Daily operations management, workflow organization, SOP development, quality follow-up, team training, and operational efficiency improvement.">إدارة التشغيل اليومي، تنظيم سير العمل، تطوير السياسات والإجراءات، متابعة الجودة، تدريب الفرق، وتحسين الكفاءة التشغيلية.</p></article>
-        <article><b>02</b><h3 data-ar="تجهيز المنشآت والمختبرات" data-en="Facility & Laboratory Setup">تجهيز المنشآت والمختبرات</h3><p data-ar="تخطيط المساحات، اختيار الأجهزة، تجهيز البنية التحتية، تنسيق الموردين، وتجهيز المشروع ليكون جاهزاً للتشغيل." data-en="Space planning, equipment selection, infrastructure preparation, supplier coordination, and preparing the project for operation.">تخطيط المساحات، اختيار الأجهزة، تجهيز البنية التحتية، تنسيق الموردين، وتجهيز المشروع ليكون جاهزاً للتشغيل.</p></article>
-        <article><b>03</b><h3 data-ar="استشارات إدارية وتشغيلية" data-en="Operational Consulting">استشارات إدارية وتشغيلية</h3><p data-ar="دراسات جدوى، تقييم أداء، إعادة هيكلة، خطط توسع، إدارة مخاطر، وتحسين نماذج العمل داخل المنشآت الطبية." data-en="Feasibility studies, performance assessment, restructuring, expansion plans, risk management, and operating model improvement.">دراسات جدوى، تقييم أداء، إعادة هيكلة، خطط توسع، إدارة مخاطر، وتحسين نماذج العمل داخل المنشآت الطبية.</p></article>
-        <article><b>04</b><h3 data-ar="الشراكات الطبية الدولية" data-en="International Medical Partnerships">الشراكات الطبية الدولية</h3><p data-ar="فتح قنوات تعاون مع مختبرات وشركات طبية خارجية، وإدارة الوكالات والخدمات المرجعية والفحوصات المتخصصة." data-en="Building collaboration channels with external laboratories and medical companies, managing agencies, reference services, and specialized tests.">فتح قنوات تعاون مع مختبرات وشركات طبية خارجية، وإدارة الوكالات والخدمات المرجعية والفحوصات المتخصصة.</p></article>
-        <article><b>05</b><h3 data-ar="إدارة العينات المرجعية" data-en="Reference Sample Management">إدارة العينات المرجعية</h3><p data-ar="تنسيق إرسال العينات، متابعة النتائج، إدارة التواصل مع المختبرات الخارجية، ودعم الفحوصات المتقدمة مثل DNA والفحوصات الجينية." data-en="Coordinating sample referrals, result follow-up, communication with external laboratories, and supporting advanced tests such as DNA and genetic testing.">تنسيق إرسال العينات، متابعة النتائج، إدارة التواصل مع المختبرات الخارجية، ودعم الفحوصات المتقدمة مثل DNA والفحوصات الجينية.</p></article>
-        <article><b>06</b><h3 data-ar="أنظمة المختبرات والتحول الرقمي" data-en="Laboratory Systems & Digital Transformation">أنظمة المختبرات والتحول الرقمي</h3><p data-ar="دعم تطبيق أنظمة LIS، التقارير الرقمية، أتمتة الإجراءات، وتحسين تجربة المريض والفرق الطبية." data-en="Supporting LIS implementation, digital reports, process automation, and improving patient and medical team experience.">دعم تطبيق أنظمة LIS، التقارير الرقمية، أتمتة الإجراءات، وتحسين تجربة المريض والفرق الطبية.</p></article>
+      <div class="tracks">
+        <article class="track reveal">
+          <div class="route"><b data-ar="الكويت" data-en="Kuwait">الكويت</b><i></i><b data-ar="الكويت" data-en="Kuwait">الكويت</b></div>
+          <h3 data-ar="التوظيف المحلي" data-en="Local recruitment">التوظيف المحلي</h3>
+          <p data-ar="مرشحون مقيمون في الكويت، جاهزون للانضمام بسرعة مع نقل الإقامة." data-en="Kuwait-based candidates ready to join quickly with residency transfer.">مرشحون مقيمون في الكويت، جاهزون للانضمام بسرعة مع نقل الإقامة.</p>
+        </article>
+        <article class="track reveal">
+          <div class="route"><b data-ar="مصر" data-en="Egypt">مصر</b><i></i><b data-ar="الكويت" data-en="Kuwait">الكويت</b></div>
+          <h3 data-ar="الاستقدام من مصر" data-en="Recruitment from Egypt">الاستقدام من مصر</h3>
+          <p data-ar="اختيار ومقابلات عن بُعد، ومتابعة الأوراق والتأشيرة حتى الوصول ومباشرة العمل." data-en="Selection and remote interviews, with paperwork and visa follow-up until arrival and start.">اختيار ومقابلات عن بُعد، ومتابعة الأوراق والتأشيرة حتى الوصول ومباشرة العمل.</p>
+        </article>
+        <article class="track reveal">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .8 3 2.8 3 6"/></svg></span>
+          <h3 data-ar="التخصصات" data-en="Specialties">التخصصات</h3>
+          <p data-ar="أطباء، وأخصائيو مختبر وأشعة، وتمريض، وصيادلة، وموظفو استقبال وإدارة طبية." data-en="Doctors, lab and radiology specialists, nurses, pharmacists, reception and medical admin staff.">أطباء، وأخصائيو مختبر وأشعة، وتمريض، وصيادلة، وموظفو استقبال وإدارة طبية.</p>
+        </article>
+      </div>
+      <div class="center reveal two-btns">
+        <a href="#contact" class="btn primary" data-pick="Recruitment-Facility" data-ar="أحتاج موظفين لمنشأتي" data-en="I need staff for my facility">أحتاج موظفين لمنشأتي</a>
+        <a href="#contact" class="btn ghost dark-text" data-pick="Recruitment-Candidate" data-ar="أبحث عن عمل في الكويت" data-en="I'm looking for a job in Kuwait">أبحث عن عمل في الكويت</a>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <!-- طريقة العمل -->
+  <section class="section">
     <div class="container">
-      <div class="title">
-        <p class="kicker" data-ar="خبرات ومشاريع" data-en="Experience & Projects">خبرات ومشاريع</p>
-        <h2 data-ar="نماذج من الخبرات التشغيلية والشراكات" data-en="Selected operational experience and partnerships">نماذج من الخبرات التشغيلية والشراكات</h2>
+      <div class="head reveal">
+        <p class="eyebrow" data-ar="طريقة عملنا" data-en="How we work">طريقة عملنا</p>
+        <h2 data-ar="من الدراسة إلى التشغيل، خطوة بخطوة" data-en="From study to operation, step by step">من الدراسة إلى التشغيل، خطوة بخطوة</h2>
       </div>
+      <ol class="steps">
+        <li class="reveal"><b>01</b><h3 data-ar="التقييم" data-en="Assessment">التقييم</h3><p data-ar="نفهم المشروع والسوق والاحتياج، ونعدّ دراسة واضحة." data-en="We study the project, market and needs, and deliver a clear plan.">نفهم المشروع والسوق والاحتياج، ونعدّ دراسة واضحة.</p></li>
+        <li class="reveal"><b>02</b><h3 data-ar="التجهيز" data-en="Setup">التجهيز</h3><p data-ar="نصمّم المكان، ونختار الأجهزة، ونجهّز الفريق والإجراءات." data-en="We design the space, select equipment and prepare the team and SOPs.">نصمّم المكان، ونختار الأجهزة، ونجهّز الفريق والإجراءات.</p></li>
+        <li class="reveal"><b>03</b><h3 data-ar="التشغيل" data-en="Operation">التشغيل</h3><p data-ar="نبدأ العمل بنظام Pure Health Care ونتابع الجودة يومًا بيوم." data-en="We go live on Pure Health Care and follow quality day by day.">نبدأ العمل بنظام Pure Health Care ونتابع الجودة يومًا بيوم.</p></li>
+        <li class="reveal"><b>04</b><h3 data-ar="التطوير" data-en="Growth">التطوير</h3><p data-ar="نقيس الأداء، ونحسّن، ونخطط للتوسع والفروع الجديدة." data-en="We measure, improve and plan expansion and new branches.">نقيس الأداء، ونحسّن، ونخطط للتوسع والفروع الجديدة.</p></li>
+      </ol>
+    </div>
+  </section>
 
-      <div class="experience">
-        <div><h3 data-ar="إدارة معمل الدلتا – مصر" data-en="Delta Lab Management – Egypt">إدارة معمل الدلتا – مصر</h3><p data-ar="إدارة ودعم تشغيلي لخدمات المختبرات داخل مصر." data-en="Management and operational support for laboratory services in Egypt.">إدارة ودعم تشغيلي لخدمات المختبرات داخل مصر.</p></div>
-        <div><h3 data-ar="المختبر الأهلي – الكويت" data-en="Al Ahli Laboratory – Kuwait">المختبر الأهلي – الكويت</h3><p data-ar="تعاون في إدارة وتشغيل خدمات المختبرات الطبية." data-en="Collaboration in managing and operating medical laboratory services.">تعاون في إدارة وتشغيل خدمات المختبرات الطبية.</p></div>
-        <div><h3 data-ar="مختبر الخليج – الكويت" data-en="Gulf Laboratory – Kuwait">مختبر الخليج – الكويت</h3><p data-ar="دعم تشغيلي وتطوير لخدمات المختبرات." data-en="Operational support and development for laboratory services.">دعم تشغيلي وتطوير لخدمات المختبرات.</p></div>
-        <div><h3 data-ar="تجهيز مختبر سوبر هلا الطبي – الكويت" data-en="Super Hala Medical Laboratory Setup – Kuwait">تجهيز مختبر سوبر هلا الطبي – الكويت</h3><p data-ar="تجهيز وتحضير مختبر طبي للتشغيل." data-en="Setup and preparation of a medical laboratory for operation.">تجهيز وتحضير مختبر طبي للتشغيل.</p></div>
-        <div><h3 data-ar="مختبرات سلطان – الأردن" data-en="Sultan Laboratories – Jordan">مختبرات سلطان – الأردن</h3><p data-ar="شراكة مع مختبرات خارجية للفحوصات المرجعية والمتخصصة." data-en="External laboratory partnership for reference and specialized testing.">شراكة مع مختبرات خارجية للفحوصات المرجعية والمتخصصة.</p></div>
+  <!-- الخبرات -->
+  <section id="experience" class="section tint">
+    <div class="container">
+      <div class="head reveal">
+        <p class="eyebrow" data-ar="خبراتنا وشراكاتنا" data-en="Experience & partnerships">خبراتنا وشراكاتنا</p>
+        <h2 data-ar="نماذج من المشاريع التي عملنا عليها" data-en="Selected projects we have worked on">نماذج من المشاريع التي عملنا عليها</h2>
+      </div>
+      <div class="projects">
+        <article class="project reveal"><span class="tag" data-ar="مصر" data-en="Egypt">مصر</span><h3 data-ar="إدارة مختبر الدلتا" data-en="Delta Lab management">إدارة مختبر الدلتا</h3><p data-ar="إدارة ودعم تشغيلي لخدمات المختبرات." data-en="Management and operational support for laboratory services.">إدارة ودعم تشغيلي لخدمات المختبرات.</p></article>
+        <article class="project reveal"><span class="tag" data-ar="الكويت" data-en="Kuwait">الكويت</span><h3 data-ar="المختبر الأهلي" data-en="Al Ahli Laboratory">المختبر الأهلي</h3><p data-ar="تعاون في إدارة خدمات المختبرات الطبية وتشغيلها." data-en="Collaboration in managing and operating laboratory services.">تعاون في إدارة خدمات المختبرات الطبية وتشغيلها.</p></article>
+        <article class="project reveal"><span class="tag" data-ar="الكويت" data-en="Kuwait">الكويت</span><h3 data-ar="مختبر الخليج" data-en="Gulf Laboratory">مختبر الخليج</h3><p data-ar="دعم تشغيلي وتطوير لخدمات المختبر." data-en="Operational support and service development.">دعم تشغيلي وتطوير لخدمات المختبر.</p></article>
+        <article class="project reveal"><span class="tag" data-ar="الكويت" data-en="Kuwait">الكويت</span><h3 data-ar="مختبر سوبر هلا الطبي" data-en="Super Hala Medical Laboratory">مختبر سوبر هلا الطبي</h3><p data-ar="تجهيز المختبر وإعداده للتشغيل." data-en="Laboratory setup and preparation for operation.">تجهيز المختبر وإعداده للتشغيل.</p></article>
+        <article class="project reveal"><span class="tag" data-ar="الأردن" data-en="Jordan">الأردن</span><h3 data-ar="مختبرات سلطان" data-en="Sultan Laboratories">مختبرات سلطان</h3><p data-ar="شراكة للفحوصات المرجعية والمتخصصة." data-en="Partnership for reference and specialized testing.">شراكة للفحوصات المرجعية والمتخصصة.</p></article>
+        <article class="project reveal partner"><span class="tag" data-ar="شراكة تقنية" data-en="Technology partner">شراكة تقنية</span><h3>One Lab Link</h3><p data-ar="تعاون في أنظمة المختبرات والتقارير الرقمية وأتمتة سير العمل والتدريب." data-en="Collaboration on lab systems, digital reporting, workflow automation and training.">تعاون في أنظمة المختبرات والتقارير الرقمية وأتمتة سير العمل والتدريب.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="partners" class="section blue-section">
-    <div class="container two">
-      <div>
-        <p class="kicker white" data-ar="شراكة تقنية" data-en="Technology Partnership">شراكة تقنية</p>
-        <h2 data-ar="One Lab Link" data-en="One Lab Link">One Lab Link</h2>
-        <p data-ar="شراكة في حلول أنظمة المختبرات ودعم التحول الرقمي، بما يساعد المختبرات على تنظيم التشغيل، التقارير، وإدارة سير العمل."
-           data-en="A partnership in laboratory system solutions and digital transformation, helping laboratories organize operations, reporting, and workflow management.">
-          شراكة في حلول أنظمة المختبرات ودعم التحول الرقمي، بما يساعد المختبرات على تنظيم التشغيل، التقارير، وإدارة سير العمل.
-        </p>
-      </div>
-      <div class="dark-card">
-        <h3 data-ar="مجالات التعاون" data-en="Focus Areas">مجالات التعاون</h3>
-        <ul>
-          <li data-ar="أنظمة إدارة المختبرات LIS" data-en="Laboratory Information Systems">أنظمة إدارة المختبرات LIS</li>
-          <li data-ar="التقارير الرقمية" data-en="Digital reporting">التقارير الرقمية</li>
-          <li data-ar="أتمتة الإجراءات" data-en="Workflow automation">أتمتة الإجراءات</li>
-          <li data-ar="التدريب والدعم" data-en="Training and support">التدريب والدعم</li>
+  <!-- التواصل -->
+  <section id="contact" class="section">
+    <div class="container contact">
+      <div class="contact-info reveal">
+        <p class="eyebrow" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</p>
+        <h2 data-ar="لنبدأ مشروعك الطبي القادم" data-en="Let's start your next healthcare project">لنبدأ مشروعك الطبي القادم</h2>
+        <p data-ar="أخبرنا عن مشروعك، وسنتواصل معك لترتيب اجتماع أو عرض توضيحي لنظام Pure Health Care." data-en="Tell us about your project and we will contact you to arrange a meeting or a Pure Health Care demo.">أخبرنا عن مشروعك، وسنتواصل معك لترتيب اجتماع أو عرض توضيحي لنظام Pure Health Care.</p>
+        <ul class="channels">
+          <li><a href="mailto:info@medcarehealthgroup.com" class="ch">
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <span><b data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</b><small>info@medcarehealthgroup.com</small></span></a></li>
+          <li><div class="ch">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <span><b data-ar="العنوان" data-en="Address">العنوان</b><small data-ar="طريق مصر الإسكندرية الزراعي، الكيلو 43" data-en="Cairo–Alexandria Agricultural Road, KM 43">طريق مصر الإسكندرية الزراعي، الكيلو 43</small></span></div></li>
         </ul>
       </div>
-    </div>
-  </section>
 
-  <section id="contact" class="section contact">
-    <div class="container contact-grid">
-      <div>
-        <p class="kicker" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</p>
-        <h2 data-ar="خلينا نبدأ في تطوير مشروعك الطبي القادم" data-en="Let’s start developing your next healthcare project">خلينا نبدأ في تطوير مشروعك الطبي القادم</h2>
-        <p data-ar="تواصل معنا لخدمات إدارة المختبرات، تجهيز المنشآت الطبية، الشراكات، أو الاستشارات التشغيلية."
-           data-en="Contact us for laboratory management, medical facility setup, partnerships, or operational consulting.">
-          تواصل معنا لخدمات إدارة المختبرات، تجهيز المنشآت الطبية، الشراكات، أو الاستشارات التشغيلية.
-        </p>
-      </div>
-      <div class="contact-card">
-        <p><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong><a href="tel:+201270925000">+20 127 092 5000</a></p>
-        <p><strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong><a href="mailto:info@medcarehealthgroup.com">info@medcarehealthgroup.com</a></p>
-        <p><strong data-ar="الموقع" data-en="Website">الموقع</strong><a href="https://www.medcarehealthgroup.com">www.medcarehealthgroup.com</a></p>
-        <p><strong data-ar="العنوان" data-en="Address">العنوان</strong><span data-ar="طريق مصر الإسكندرية الزراعي، الكيلو ٤٣، بجوار مدخل القناوية، مصر" data-en="Cairo-Alexandria Agricultural Road, KM 43, beside Al-Qanawiya entrance, Egypt">طريق مصر الإسكندرية الزراعي، الكيلو ٤٣، بجوار مدخل القناوية، مصر</span></p>
-      </div>
+      <form class="form reveal" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="lang" id="formLang" value="ar">
+        <p class="hp"><label>Leave empty <input name="bot-field"></label></p>
+        <h3 data-ar="اطلب عرضًا أو استشارة" data-en="Request a demo or consultation">اطلب عرضًا أو استشارة</h3>
+        <div class="row">
+          <label><span data-ar="الاسم" data-en="Name">الاسم</span><input name="name" required autocomplete="name"></label>
+          <label><span data-ar="اسم المنشأة" data-en="Facility name">اسم المنشأة</span><input name="facility" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label><span data-ar="الهاتف" data-en="Phone">الهاتف</span><input name="phone" type="tel" required dir="ltr" autocomplete="tel" placeholder="+965 5xxx xxxx"></label>
+          <label><span data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</span><input name="email" type="email" dir="ltr" autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label><span data-ar="الدولة" data-en="Country">الدولة</span><input name="country" autocomplete="country-name"></label>
+          <label><span data-ar="الخدمة المطلوبة" data-en="Service needed">الخدمة المطلوبة</span>
+            <select name="service">
+              <option value="Pure Health Care" data-ar="عرض توضيحي للنظام" data-en="System demo">عرض توضيحي للنظام</option>
+              <option value="Setup" data-ar="تجهيز مختبر أو منشأة" data-en="Laboratory or facility setup">تجهيز مختبر أو منشأة</option>
+              <option value="Operations" data-ar="إدارة وتشغيل" data-en="Management & operations">إدارة وتشغيل</option>
+              <option value="Consulting" data-ar="استشارة" data-en="Consulting">استشارة</option>
+              <option value="Recruitment-Facility" data-ar="توظيف: أحتاج موظفين" data-en="Recruitment: I need staff">توظيف: أحتاج موظفين</option>
+              <option value="Recruitment-Candidate" data-ar="توظيف: أبحث عن عمل" data-en="Recruitment: I'm looking for a job">توظيف: أبحث عن عمل</option>
+              <option value="Allergy" data-ar="برنامج الحساسية" data-en="Allergy Program">برنامج الحساسية</option>
+              <option value="Partnership" data-ar="شراكة" data-en="Partnership">شراكة</option>
+              <option value="Other" data-ar="أخرى" data-en="Other">أخرى</option>
+            </select>
+          </label>
+        </div>
+        <label><span data-ar="رسالتك" data-en="Your message">رسالتك</span><textarea name="message" rows="4"></textarea></label>
+        <button type="submit" class="btn primary full" data-ar="إرسال" data-en="Send">إرسال</button>
+      </form>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="container foot">
-    <span>© 2026 Med Care Health Group</span>
-    <span data-ar="إدارة وتشغيل وتجهيز المختبرات والمنشآت الطبية" data-en="Laboratory and Healthcare Facility Management">إدارة وتشغيل وتجهيز المختبرات والمنشآت الطبية</span>
-    <a href="/privacy.html" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <img src="img/mch-logo.png" alt="Med Care Health Group" class="foot-logo" width="220" height="79">
+    </div>
+    <nav class="foot-links">
+      <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
+      <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+      <a href="#system">Pure Health Care</a>
+      <a href="#recruitment" data-ar="التوظيف الطبي" data-en="Medical recruitment">التوظيف الطبي</a>
+      <a href="#experience" data-ar="خبراتنا" data-en="Experience">خبراتنا</a>
+      <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+      <a href="/privacy" data-ar="سياسة الخصوصية" data-en="Privacy policy">سياسة الخصوصية</a>
+    </nav>
+  </div>
+  <div class="container foot-bottom">
+    <span data-ar="© 2026 Med Care Health Group. جميع الحقوق محفوظة." data-en="© 2026 Med Care Health Group. All rights reserved.">© 2026 Med Care Health Group. جميع الحقوق محفوظة.</span>
   </div>
 </footer>
 
-<script>
-let currentLang = "ar";
-const btn = document.getElementById("langBtn");
-
-function setLanguage(lang) {
-  currentLang = lang;
-  document.documentElement.lang = lang;
-  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  document.querySelectorAll("[data-ar][data-en]").forEach(el => {
-    el.textContent = el.dataset[lang];
-  });
-  btn.textContent = lang === "ar" ? "English" : "العربية";
-}
-btn.addEventListener("click", () => setLanguage(currentLang === "ar" ? "en" : "ar"));
-</script>
+<script src="site.js"></script>
 </body>
 </html>
